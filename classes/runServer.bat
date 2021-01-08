@@ -1,1 +1,1 @@
-java LoggingServer 2000
+java LogManagementSystem 2000
