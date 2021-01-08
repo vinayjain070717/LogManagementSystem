@@ -1,1 +1,1 @@
-java ThreadedClientMain Device1 payload
+java Client3 App1 Device1 {'currentPage':'loginPage'}

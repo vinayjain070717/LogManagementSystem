@@ -16,12 +16,12 @@ class MyThread extends Thread
 }
 class ThreadedClient
 {
+	private String applicationName,deviceName;
 	private String nature;
-	private String inputPayload;
-	public ThreadedClient(String nature,String inputPayload)
+	public ThreadedClient(String applicationName,String deviceName)
 	{
-		this.deviceID=deviceID;
-		this.inputPayload=inputPayload;
+		this.applicationName=applicationName;
+		this.deviceName=deviceName;
 	}
 	public synchronized void sendRequests()
 	{
@@ -37,13 +37,11 @@ class ThreadedClient
 			int portNumber=2000;
 			String serverName="localhost";
 
-			String deviceID;
-			String payLoad;
 			Timestamp currentTime;
 			// deviceID=UUID.randomUUID().toString();
 			currentTime=new Timestamp(new java.util.Date().getTime());
-			payLoad=this.inputPayload+i;
-			 String request=this.deviceID+","+currentTime.toString()+",request,"+payLoad+"#";
+			String payLoad="Payload "+i;
+			 String request=this.applicationName+","+this.deviceName+","+currentTime.toString()+",Request,"+payLoad+"#";
 			//String request=String.valueOf(i);
 			System.out.println(request);
 			Socket socket=new Socket(serverName,portNumber);

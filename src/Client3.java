@@ -11,7 +11,8 @@ public static void main(String data[])
 try
 {
 	String applicationName=data[0];
-	String deviceID=data[1];	
+	String deviceID=data[1];
+	String payload=data[2];	
 	OutputStream outputStream;
 	OutputStreamWriter outputStreamWriter;
 	InputStream inputStream;
@@ -20,7 +21,6 @@ try
 	String serverName="localhost";
 
 	// String deviceID;
-	String payLoad;
 	Timestamp currentTime;
 	// if(i%100==0)j++;
 //	Random random=new Random();
@@ -28,8 +28,7 @@ try
 	// deviceID=UUID.randomUUID().toString();
 	// deviceID="Device "+deviceID;
 	currentTime=new Timestamp(new java.util.Date().getTime());
-	payLoad="Done";
-	String request=applicationName+","+deviceID+","+currentTime.toString()+","+"Request"+","+payLoad+"#";
+	String request=applicationName+","+deviceID+","+currentTime.toString()+","+"Request1"+","+payload+"#";
 	//String request=String.valueOf(i);
 	System.out.println(request);
 	Socket socket=new Socket(serverName,portNumber);
