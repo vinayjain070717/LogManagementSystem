@@ -1,0 +1,1 @@
+java -cp ..\..\..\lib\*;. RetrievalServer 3000

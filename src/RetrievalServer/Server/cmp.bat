@@ -1,0 +1,1 @@
+javac -cp ..\..\..\lib\*;. RetrievalServer.java

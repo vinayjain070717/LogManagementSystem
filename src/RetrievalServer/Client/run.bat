@@ -1,0 +1,1 @@
+java -cp ..\..\..\lib\*;. RetrievalClient app1 device3 2021-01-08
