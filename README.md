@@ -3,7 +3,8 @@
 - So with this solution, we can easily make and retrieve logs from our application.
 - It is just a component, which can be integrated with any application. I also integrated with some of my applications and it work very smoothly and give me lots of data to analyze.
 - We can integrate it with any of our website, and see details of users, about where are going more, what they are doing, how much time they spend and much more. This is just an example, its scope is much bigger.
-- This logsManagementSystem has following features:
+
+This logsManagementSystem has following features:
 1) It can maintain log files according to hourly, daily, monthly or yearly basis.
 2) It can give logs of according to date.
 3) It can work well in system, where thousands or request from different sources, coming to logSystem in seconds.
